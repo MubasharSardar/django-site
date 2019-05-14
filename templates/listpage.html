@@ -1,0 +1,17 @@
+{%load static from staticfiles%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{%static 'listpage.css'%}">
+    </head>
+    <body>
+        <h1>Cool Coding With Mubashar</h1>
+        <hr>
+        <h3> Here are the list of python tutorials</h3>
+        {%for pydata in object_list%}
+        <ul>
+            <li><a href="{{pydata.id}}">{{pydata.title}}</a></li>
+        </ul>
+        {%endfor%}
+    </body>
+</html>

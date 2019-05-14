@@ -1,0 +1,13 @@
+{%load static from staticfiles%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{%static 'detailpage.css'%}">
+    </head>
+    <body>
+        <h1>{{pydata.title}}</h1>
+        <hr>
+        <p>{{pydata.description| safe}}</p>
+        <p>Posted by Sardar Mubashar on {{pydata.date}}</p>
+    </body>
+</html>
